@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-content {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content img {
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+  
+  .background {
+    width: 100%;
+    min-height: 90vh;
+    position: relative;
+    background-image: url("background/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .orderform {
+    width: 100%; 
+    max-width: 1000px; 
+    height: auto; 
+    background-color: #ffffff;
+    box-shadow: 0px 6px 5px 4px rgba(0, 0, 0, 0.25);
+    padding: 120px;
+  }
+  
+  .logo {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: "Monoton", cursive;
+    font-size: 50px;
+  }
+  
+  .logo span {
+    color: #58b7f1;
+  }
+  
+  .opt {
+    display: none;
+  }
+  
+  .orderform .left-side {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 100%;
+    height: 400px;
+    padding: 20px 2px 0 20px;
+  }
+  
+  .orderform .left-side input {
+    margin: 15px 0;
+    padding: 8px;
+  }
+  
+  .orderform .left-side .selection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .orderform .left-side .selection select {
+    padding: 8px;
+  }
+  
+  .orderform .left-side .selection .opt {
+    width: 100%;
+  }
+  
+  .orderform .right-side {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    float: right;
+    width: 50%;
+    margin-top: 10px;
+    padding: 20px 2px 0 20px;
+  }
+  
+  .orderform .right-side .tanggal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2%;
+  }
+  
+  .orderform .right-side .input {
+    width: 30%;
+    height: 60px;
+    border: 0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+  }
+  .orderform .right-side .input p {
+    font-size: 13px;
+    width: 100%;
+    height: 25px;
+    background-color: #58b7f1;
+    color: #ffffff;
+  }
+  .orderform .right-side .input input {
+    border: 0;
+    width: 80%;
+  }
+  .orderform .right-side .durasi p {
+    margin-bottom: 10px;
+  }
+  
+  .orderform .right-side #hari {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    width: 80px;
+    height: 35px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+  }
+  
+  .orderform .right-side p.jaminan {
+    margin: 10px 0;
+  }
+  
+  .orderform .right-side .file-upload {
+    margin: 0 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  #dari,
+  #sampai {
+    width: 95%;
+  }
+  
+  .orderform .right-side .file-upload select {
+    margin: 8px 0;
+    width: 100%;
+    height: fit-content;
+  }
+  .orderform .right-side .file-upload input {
+    margin: 8px 0;
+    width: 70%;
+    height: fit-content;
+  }
+  
+  #submit {
+    background-color: #58b7f1;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 10px;
+    margin-top: 1rem;
+  }
+  
+  .submit {
+    display: flex;
+    justify-content: right;
+    margin-right: 15px;
+  }
+  
+  .file-upload p {
+    font-weight: 500;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .logo {
+      font-size: 40px;
+      text-align: center;
+    }
+    .orderform {
+      height: fit-content;
+    }
+  
+    .orderform .left-side,
+    .orderform .right-side {
+      float: none;
+      width: 100%;
+      padding: 0 1rem;
+    }
+    .orderform .left-side .selection {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .orderform .left-side .selection .opt {
+      width: 100%;
+    }
+    .tanggal {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .submit {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+  }
+  
+
+
+  

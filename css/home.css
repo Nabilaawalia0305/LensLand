@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 3rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --main-color: #1e6fad;
+  --second-color: #4d8ab8;
+  --text-color: #444;
+  --gradient: linear-gradient(#1e6fad, #4d8ab8);
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 5rem;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 10px 100px;
+  box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+  font-size: 20px;
+}
+
+
+.logo img {
+  width: 150px;
+}
+
+.maps img {
+  width: 100px;
+  height: auto;
+}
+
+.gambar img {
+  width: 300px;
+  height: 100px;
+}
+
+.main-content {
+    height: 100%;
+    min-height: 0rem;
+    max-width: 300%;
+    position: relative;
+    background-image: url("background/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .heading img {
+    width: 700px;
+    height: 100%;
+  }
+  .heading p{
+    font-size: 2.5rem;
+  font-weight: bold;
+  }
+  .heading-2 img {
+    width: 300px;
+    height: 100%;
+  }
+  
+  .main-content .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  
+  .main-content .about-section .heading {
+    text-align: center;
+    font-weight: 500;
+    color: #000000;
+  }
+  
+  .main-content .about-section .heading span:nth-child(1) {
+    color: #58b7f1;
+    font-weight: 700;
+  }
+  .main-content .about-section .heading span:nth-child(2) {
+    font-weight: 700;
+  }
+  .main-content .about-section .heading span:nth-child(3) {
+    font-size: 80%;
+  }
+  
+  .main-content .about-section .line-1 {
+    position: relative;
+    margin: auto;
+    width: 60%;
+    height: 4px;
+    background-color: #58b7f1;
+    margin-top: 10px;
+  }
+  
+  .main-content .about-section .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .main-content .about-section .main-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  }
+  
+  .main-content .about-section button {
+    color: #58b7f1;
+    background-color: #ffffff;
+    border: 2px solid #58b7f1;
+    border-radius: 20px;
+    margin-top: 1rem;
+    width: 200px;
+    height: 35px;
+    transition: all 0.2s ease;
+  }
+  
+  .main-content .about-section button:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #58b7f1;
+  }
+  
+  .main-content .catalog-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  
+  .main-content .catalog-section h2 {
+    color: #58b7f1;
+  }
+  
+  
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  font-size: 2rem;
+  padding: 20px 40px;
+  color: var(--text-color);
+  font-weight: 800;
+  text-align: right;
+}
+
+.navbar a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: var(--gradient);
+  position: absolute;
+  button: -4px;
+  left: 0;
+  transition: 0.5s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+#menu-icon {
+  font-size: 100px;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+  text-align: right;
+  direction: rtl;
+  float: right;
+}
+
+
+footer {
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  width: 100%;
+  height: 100px;
+  color: #fff;
+  background-color: #4d8ab8;
+}
+
+footer p span {
+  color: #0b0e10;
+}
+
+@media only screen and (max-width: 768px) {
+  footer p {
+    font-size: 0.5rem;
+  }
+}

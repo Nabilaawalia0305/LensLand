@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-content .about-section .heading-profil {
+  text-align: center;
+  font-weight: 500;
+  color: #000000;
+}
+
+.about-section .heading-profil {
+  text-align: center;
+  font-weight: 500;
+  color: #000000;
+  margin: 0 auto; 
+  max-width: 600px; 
+}
+
+.heading-profil img {
+  width: 300px;
+}
+
+.heading-profil p{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+  
+.background {
+  width: 100%;
+  min-height: 70vh;
+  position: relative;
+  background-image: url("background/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
+.deskripsi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  font-size: 1.5rem; 
+  font-weight: 400;
+  width: 75%;
+  margin: 1rem auto; 
+}
+  
+.deskripsi p {
+  margin-left: 55px;
+  margin-right: 50px;
+}
+  
+.deskripsi img {
+  width: 200px;
+}
+.deskripsi a {
+  color: #e6e6e6;
+  text-decoration: underline;
+}
+  
+.deskripsi a:hover {
+  color: #ffffff;
+}
+
+.contact-container {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+  
+.contact {
+  display: flex; 
+  justify-content: space-evenly; 
+  width: 300%;
+  max-width: 900px; 
+}
+  
+.contact .socmed {
+  text-align: center;
+}
+  
+.contact img {
+  height: 6rem;
+}
+  
+@media only screen and (max-width: 900px) {
+  .contact {
+    flex-wrap: wrap;
+  }
+  
+  .contact .socmed {
+    flex: 0 0 60%; 
+    max-width: 80%;
+  }
+}
+
+.location-info {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+  
+.location-info img {
+  width: 500px;
+  height: 300px;
+}
+  
+.location-info a {
+  color: #574bda;
+  text-decoration: underline;
+}
+  
+.location-info a:hover {
+  color: #574bda;
+}

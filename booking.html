@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lens Land</title>
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/booking.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+<header>
+  <a href="#" class="logo"><img src="img/logo.jpg"></a>
+  <div id="menu-icon"><i class='bx bx-menu'></i></div>
+  <ul class="navbar">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="profil.html">Profil</a></li>
+    <li><a href="produk.html">Produk</a></li>
+    <li><a href="tutorial.html">Tutorial Booking</a></li>
+    <li><a href="booking.html">Booking</a></li>
+  </ul>
+  <br><br><br>
+  <a href="#" class="maps"><img src="img/icMaps.jpg"></a>
+  <p>Jl.Parangkritis 303-321, Saman, Sewon, Bantul-Yogyakarta 55188</p>
+</header>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<main class="main-content-booking">
+    <div class="background">
+        <div class="main-content">
+            <div class="orderform">
+                <!-- <div class="logo">
+                  <a href="index.html"><span><img src="img/logo.jpg"></span></a>
+                </div> -->
+                <div id="camera-list-booking"></div>
+                <div class="form-section">
+                  <form action="db_proses.php" method="post" enctype="multipart/form-data">
+                    <div class="left-side">
+                      <input type="text" placeholder="Nama Lengkap" name="nama_lengkap" autocomplete="off" required/>
+                      <input type="number" placeholder="No Telepon" name="no_telepon" autocomplete="off" required/>
+                      <input type="text" placeholder="Alamat Sekarang" name="alamat_sekarang" autocomplete="off" required/>
+                      <input type="number" placeholder="Harga" name="harga" autocomplete="off" required/>
+                      <!-- <div class="gender-section">
+                        <input name="jenis_kelamin" type="radio" id="lakilaki" value="Laki-laki" required>
+                        <label for="lakilaki">Laki-laki</label>
+                        <input name="jenis_kelamin" type="radio" id="perempuan" value="Perempuan" required>
+                        <label for="perempuan">Perempuan</label>
+                      </div>               -->
+                      <div class="selection">
+                        <select name="tipe" id="tipe" onchange="vehicleSelection()">
+                          <option value="0">Pilih Jenis Camera</option>
+                          <option value="canon">Canon</option>
+                          <option value="sony">Sony</option>
+                        </select>
+                        <select name="canon" id="canon" class="opt">
+                          <option value="canon500D">Canon500D</option>
+                          <option value="canon600D">Canon600D</option>
+                          <option value="canon700D">Canon700D</option>
+                          <option value="canon800D">Canon800D</option>
+                          <option value="canon900D">Canon900D</option>
+                          <option value="canon1000D">Canon500D</option>
+                        </select>
+                        <select name="sony" id="sony" class="opt">
+                          <option value="sonya6000">Sony a 6000</option>
+                          <option value="sonya6300">Sony a 6300</option>
+                          <option value="sonya7000">sony a 7000</option>
+                          <option value="sonya8000">sony a 8000</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="right-side">
+                      <div class="tanggal">
+                        <div class="input">
+                          <p>Dari</p>
+                          <input type="date" id="dari" name="mulai" required/>
+                        </div>
+                        <div class="durasi">
+                          <p>Durasi</p>
+                          <p id="hari" name="hari">Hari</p>
+                        </div>
+                        <div class="input">
+                          <p>Sampai</p>
+                          <input type="date" id="sampai" name="sampai" required/>
+                        </div>
+                      </div>
+                      <p class="jaminan">Jaminan</p>
+                      <div class="file-upload">
+                        <input type="file" name="KTP" required/>
+                        <p>KTP</p>
+                      </div>
+                      <div class="file-upload">
+                        <input type="file" name="SIM_STNK"/>
+                        <p>SIM/STNK</p>
+                      </div>
+                      <div class="file-upload">
+                        <input type="file" name="BPKB"/>
+                        <p>BPKB</p>
+                      </div>
+                      <div class="submit">
+                        <input type="submit" id="submit" />
+                      </div>
+                    </div>
+                  </div>
+                  </form>
+                  <br>
+              </div>
+        </div>
+        <br><br><br><br><br><br><br>
+        <div align="center" style="font-size: 30px;"><strong><a href="db_lihat.php">::Lihat Data Booking::</a></strong></div>
+    </div>
+    </main>
+<footer class="footer">
+    <p>
+      ©2023 <span>LensLand.com</span> - Rental Camera Yogyakarta. 2200018245_Nabila Awalia_Sabtu 09.00_Kode G
+    </p>
+</footer>
+
+  <script src="js/produk.js"></script>
+</body>
+</html>
